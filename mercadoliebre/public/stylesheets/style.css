@@ -17,6 +17,10 @@
   --ColorVerde: #39b54a;
 }
 
+body{
+  background-color: var(--ColorGris-claro);
+}
+
 /* HEADER */
 
 header{
@@ -26,81 +30,102 @@ header{
 
 header .logo{
     height: 34px;
-     
+    
 }
 
 header .logo a img{
-  
-  height:100%;
- 
+  height: 100%;
 }
 
-header .input-seach{
+header .input-search{
   background-color: white;
-  border-radius:5px;
-  padding:5px;
-  position:relative;
-  width:100%;
-  height:40px ;
-
-}
-header.input-seach input{
-border:none;
-font-size:1.5em;
-}
-header .input-search input:placeholder{
-  color:var(--ColorGris-oscuro);
+  border-radius: 2px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
 
+header .input-search input{
+  border:none;
+}
+
+header .input-search input::placeholder{
+  color: var(--ColorGris-oscuro);
+}
 
 header .input-search button{
-  border:none;
-  background-color:white;
-  color:var(--ColorGris-oscuro);
+  border: none;
+  background-color: white;
+  color: var(--ColorGris-oscuro);
   border-left: solid 1px var(--ColorGris-claro);
-position:absolute;
-  right:2px ;
-  font-size:0.8em;
-  height:60% ;
+  position: absolute;
+  right: 2px;
+  font-size: 0.8em;
+  height: 60%;
   width: 12%;
 }
 
+header .cuotas{
+  display: flex;
+  justify-content: center;
+}
 
-
-
-  header .cuotas{
-    display:flex;
-    justify-content: center;
-    
-    }
-    
 header .cuotas p{
-  margin-left:3px;
+  margin-left: 3px;
 }
-header nav{
-width:100%;
-display:flex;
-text-align: center;
-flex-wrap: wrap;
 
+header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-header nav button.burger{
-  background-color:var(--color-azul);
-  border:none;
-  border-radius:4px ;
-  padding:3px 15px ;
+
+header nav button.burger {
+  background-color: var(--ColorAzul);
+  border: none;
+  border-radius: 4px;
+  padding: 3px 15px;
 }
+
 header nav button.burger:focus{
-  outline:1px solid white;
-}
+  outline: 1px solid white;
+} 
 
 header nav button.burger i{
-  color:white
+  color: white;
 }
-header nav ul{
-display:flex;
-flex-wrap:wrap;
-flex-direction: column;
-margin-top:30px ;
 
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 30px;
 }
+
+/* BANNER */
+
+.banner img {
+  width: 100%;
+  display: none;
+}
+
+/* PRODUCTOS */
+
+section .titulo{
+    color: var(--ColorGris-oscuro);
+}
+section article {
+  background-color: white;
+}
+section article .contenido{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+section .contenido figure img{
+  width: 90%;
+}
+
